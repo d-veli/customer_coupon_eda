@@ -1,11 +1,16 @@
-#### Motivation: Explore Restaurants (20-50) coupon group
-In the notebook, we narrowed our focus on the coupon categories that are harder to push (other than bar coupons) and explore the differences in those who accept and reject the coupon.
+## Link to Jupyter notebook
+https://github.com/d-veli/customer_coupon_eda/blob/main/prompt_findings.ipynb
+
+## Summary of Findings
+
+### Our motivation to explore Restaurants (20-50) coupon group
+In the notebook, we narrow our focus on the coupon categories that are harder to push (other than bar coupons) and explore the differences in those who accept and reject the coupon.
 
 Since more expensive restaurants (ie. Restaurants (20-50)) has the second lowest acceptance rate, we will focus on cracking this tougher nut with some slicing and dicing.
 
 The intention will be to identify factors which increase likelihood of drivers accepting this coupon type.
 
-#### Findings from Bar Plots
+### Findings from Bar Plots
 To keep laser focus through the noise, we make notable observations for where acceptance rate is above the population's acceptance rate of 0.44.
 
 When do we see increases in coupon acceptance? When:
@@ -30,24 +35,27 @@ Demographically
 Behaviourally
 - the driver visits bars or restauraunts at least once a month: the more frequent the more likely (ie. as high as 0.69 when going to expensive restaurants more than 8 times)
 
-#### Heatmap Findings 1: First bingo!
+### Findings from Heatmaps
+
+See notebook for further context as these are pulled directly and require accompanying plots for context.
+
+#### Finding 1: First bingo!
 Looking at the top left quadrant tells us that lower income drivers (under 50K) who go to restauraunts in the 20 to 50 range more than four times a month, have a very high likelihood to accept the coupon (between 0.71 to 0.82)!
 
-#### Heatmap Findings 2: Expiration does play some role
+#### Finding 2: Expiration does play some role
 While acceptance rate does increase when a coupon is sent at 10 AM and has a longer expiration (a day), 0.68 just nearly misses our goal to find observations above 0.70.
 
 A surprising twist to our initial hypothesis, perhaps rich people are less enticed by coupons given the relative savings of a coupon is less signifcant?
 
-#### Heatmap Findings 3:  Second bingo!
+#### Finding 3: Second bingo!
 Bingo and another one in the bag! This time we find a whopping 0.80 acceptance rate when driving with a partner and the coupon is recieved at 2PM.
 
-#### Heatmap Findings 4: Another bingo?
+#### Finding 4: Another bingo?
 Yes and no. Interestingly in the higher income groups some niche patterns emerge.
 - 75K to 87.5K income drivers with children that never eat at expensive restaurants, are very likely to accept the coupon (0.86)
 - Drivers with 100K or more income without children that already go more than once a month, are very likely to accept the coupon (0.74 to 0.80)
 
-
-#### Next Steps and Recommendations
+### Next Steps and Recommendations
 - From our findings, it is clear there are ways to improve which drivers to target to get better traction on accepting more expensive restaurant coupons.
 - While not exhaustive, based on our findings the following recommendations can help improve targeting efforts by only prompting drivers with coupons as follows:
 
